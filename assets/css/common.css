@@ -1,0 +1,64 @@
+/* 공용 재활 */
+
+.blind{
+    /* display: none;
+    opacity: 0;
+    width: 0;height: 0;
+    font-size: 0;
+    visibility: hidden;
+    text-indent: -9999px;
+    position: absolute;
+    top: -9999px;
+    left: -9999px; */
+
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+
+}
+
+#skipNav{
+    position: absolute;
+}
+#skipNav a{
+    position: absolute;
+    white-space: nowrap;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    /* c#fff    */
+    top: -50px;
+}
+#skipNav a:focus,
+#skipNav a:active{
+    top: 0;
+
+}
+
+
+
+/* pc 100*100 */
+/* m 200*200 -=> 100*100*/
+
+/* 모든이미지가 2배사이즈 [레티나디바이스]*/
+
+
+
+
+/* 스프라이트 처리하는법 */
+.sc-login .link-login::before,
+#header .util-area [class*="btn-"]::after,
+#header .search-wrap .btn-auto::before,
+#header .search-wrap .btn-keyboard::before,
+#header .nav-area [class*="ico-"]::before,
+#header .nav-area [class*="ico-"]::after
+{
+    background-image: url('../images/sp-bg.png');
+    background-repeat: no-repeat;
+    background-size: 458px 444px;
+}
+
+
